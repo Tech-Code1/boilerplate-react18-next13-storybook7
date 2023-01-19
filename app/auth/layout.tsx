@@ -4,9 +4,13 @@ interface IProps {
 
 export default function AuthLayout({children}:IProps) {
     return (
-      <html>
+      <>
         <head />
-        <body className="flex justify-center items-center h-screen">{children}</body>
-      </html>
+        <body>
+          <section className="flex justify-center items-center h-screen">
+            {children}
+          </section>
+        </body>
+      </>
     )
   }

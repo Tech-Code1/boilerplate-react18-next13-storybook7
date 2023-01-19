@@ -32,6 +32,10 @@ module.exports = {
           alternative: '#1F2937'
         },
 
+        gray: {
+          grayLight: '#E6EBEF'
+        },
+
         error: {
           redLight: '#FFDACE',
           redDark: '#C20707'

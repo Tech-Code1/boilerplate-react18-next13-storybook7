@@ -1,6 +1,8 @@
+import ContentLogin from '../components/ContentLogin';
+
 function Register() {
   return (
-    <div>Register</div>
+    <ContentLogin />
   )
 }
 

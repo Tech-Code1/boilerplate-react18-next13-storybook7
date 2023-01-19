@@ -6,7 +6,7 @@ interface IProps {
 
 export default function RootLayout({children}:IProps) {
     return (
-      <html>
+      <html lang="es">
         <head />
         <body>{children}</body>
       </html>

@@ -1,6 +1,8 @@
+import ContentLogin from "../components/ContentLogin"
+
 function Login() {
   return (
-    <div>Login</div>
+    <ContentLogin />
   )
 }
 
