@@ -1,7 +1,37 @@
 {
   "name": "portfolio",
+  "author": "Open Source",
+  "description": "Application to generate your CV",
+  "contributors": [
+    {
+      "name": "-Sin Nombre-",
+      "email": "whitoutname@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "Jose Grillo",
+      "email": "grillo.jg@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "Richard Aguilar",
+      "email": "ridarlar@gmail.com",
+      "url": ""
+    },
+    {
+      "name": "Bryan Aguilar",
+      "email": "bryan.aguilar6174@gmail.com",
+      "url": "https://github.com/baguilar6174"
+    },
+    {
+      "name": "David Montoya",
+      "email": "deividelpaisa@hotmail.com",
+      "url": "https://github.com/Tech-Code1"
+    }
+  ],
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,6 +45,11 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "4.9.4"
+  },
+  "engines": {
+    "node": ">=16.0.0.",
+    "yarn": ">=1.22.0",
+    "npm": ">=8.0.0"
   },
   "devDependencies": {
     "@types/node": "18.11.18",
