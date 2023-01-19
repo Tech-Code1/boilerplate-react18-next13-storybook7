@@ -1,9 +1,7 @@
-import ContentLogin from '../components/ContentLogin';
+import ContentLogin from '../components/ContentLogin'
 
 function Register() {
-  return (
-    <ContentLogin />
-  )
+  return <ContentLogin />
 }
 
 export default Register

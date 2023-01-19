@@ -1,9 +1,7 @@
-import ContentLogin from "../components/ContentLogin"
+import ContentLogin from '../components/ContentLogin'
 
 function Login() {
-  return (
-    <ContentLogin />
-  )
+  return <ContentLogin />
 }
 
 export default Login
