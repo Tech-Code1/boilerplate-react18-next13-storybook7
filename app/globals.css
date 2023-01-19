@@ -5,5 +5,5 @@
 /* buttons */
 
 .btn-standard {
-    @apply outline-none border-none text-base font-body font-bold text-black-principal
+  @apply outline-none border-none text-base font-body font-bold text-black-principal;
 }

@@ -1,3 +1,7 @@
 .content-style-login {
-    background: linear-gradient(185.79deg, #6C63FF 6.35%, rgba(108, 99, 255, 0) 221.73%);
+  background: linear-gradient(
+    185.79deg,
+    #6c63ff 6.35%,
+    rgba(108, 99, 255, 0) 221.73%
+  );
 }

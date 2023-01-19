@@ -1,12 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./app/**/*.{js,ts,jsx,tsx}", // Note the addition of the `app` directory.
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    './app/**/*.{js,ts,jsx,tsx}', // Note the addition of the `app` directory.
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
-    
     fontFamily: {
       title: ['Roboto Slab', 'sans-serif'],
       body: ['Ubuntu', 'sans-serif']
@@ -46,7 +45,7 @@ module.exports = {
           greenDark: '#42B462'
         }
       }
-    },
+    }
   },
-  plugins: [],
+  plugins: []
 }

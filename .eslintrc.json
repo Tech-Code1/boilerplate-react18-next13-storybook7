@@ -19,7 +19,7 @@
   "ignorePatterns": ["node_modules/**"],
   "rules": {
     "max-len": ["error", 140],
-    "no-unused-vars": "warn",
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }],
     "quotes": [2, "single", { "avoidEscape": true }],
     "prettier/prettier": "error",
     "@next/next/no-html-link-for-pages": "off",
