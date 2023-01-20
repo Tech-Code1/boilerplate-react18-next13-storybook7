@@ -32,12 +32,17 @@
   "version": "0.1.0",
   "private": false,
   "license": "MIT",
+  "resolutions": {
+    "webpack": "^5"
+  },
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "prettier": "prettier --write .",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -45,6 +50,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "next": "^13.1.2",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
     "typescript": "4.9.4"
   },
@@ -53,15 +59,27 @@
     "node": ">=16.0.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.20.12",
     "@commitlint/cli": "^17.4.2",
     "@commitlint/config-conventional": "^17.4.2",
+    "@storybook/addon-actions": "^7.0.0-beta.30",
+    "@storybook/addon-essentials": "^7.0.0-beta.30",
+    "@storybook/addon-interactions": "^7.0.0-beta.30",
+    "@storybook/addon-links": "^7.0.0-beta.30",
+    "@storybook/nextjs": "^7.0.0-beta.30",
+    "@storybook/react": "^7.0.0-beta.30",
+    "@storybook/testing-library": "^0.0.14-next.1",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
     "@typescript-eslint/parser": "^5.48.2",
+    "assert": "^2.0.0",
     "autoprefixer": "^10.4.13",
+    "babel-loader": "^8.3.0",
+    "buffer": "^6.0.3",
     "cross-env": "^7.0.3",
+    "crypto-browserify": "^3.12.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-next": "^13.1.2",
@@ -73,8 +91,17 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-storybook": "^0.6.10",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.3",
-    "tailwindcss": "^3.2.4"
+    "process": "^0.11.10",
+    "storybook": "^7.0.0-beta.30",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.2.4",
+    "url": "^0.11.0"
   }
 }

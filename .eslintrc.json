@@ -5,8 +5,21 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["next/core-web-vitals", "airbnb", "plugin:prettier/recommended"],
-  "overrides": [],
+  "extends": [
+    "plugin:storybook/recommended",
+    "next/core-web-vitals",
+    "airbnb",
+    "plugin:prettier/recommended"
+  ],
+  "overrides": [
+    {
+      "files": ["*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
+      "rules": {
+        // example of overriding a rule
+        "storybook/hierarchy-separator": "error"
+      }
+    }
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -51,6 +64,38 @@
         "prefix": ["I"],
         "trailingUnderscore": "allow",
         "selector": "interface"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "bundledDependencies": false }
+    ],
+    "react/function-component-definition": [
+      0,
+      {
+        "namedComponents": [
+          "function-declaration",
+          "function-expression",
+          "arrow-function",
+          "function-declaration",
+          "function-expression",
+          "arrow-function"
+        ],
+        "unnamedComponents": [
+          "function-expression",
+          "arrow-function",
+          "function-expression",
+          "arrow-function"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      1,
+      {
+        "html": "ignore",
+        "custom": "ignore",
+        "explicitSpread": "ignore",
+        "exceptions": [""]
       }
     ]
   },
