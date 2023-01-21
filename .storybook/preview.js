@@ -1,4 +1,7 @@
+/* import * as jest from 'jest-mock'
+window.jest = jest */
 import * as NextImage from 'next/image'
+import { withTailwindTheme } from './withTailwindTheme.decorator'
 
 const BREAKPOINTS_INT = {
   xs: 375,
@@ -10,7 +13,6 @@ const BREAKPOINTS_INT = {
 
 const customViewports = Object.fromEntries(
   Object.entries(BREAKPOINTS_INT).map(([key, val], idx) => {
-    console.log(val)
     return [
       key,
       {
@@ -34,11 +36,24 @@ Object.defineProperty(NextImage, 'default', {
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/
-    }
-  },
   viewport: { viewports: customViewports }
 }
+
+export const globalTypes = {
+  theme: {
+    name: 'Theme',
+    description: 'Global theme for components',
+    toolbar: {
+      icon: 'paintbrush',
+      // Array of plain string values or MenuItem shape
+      items: [
+        { value: 'light', title: 'Light', left: '🌞' },
+        { value: 'dark', title: 'Dark', left: '🌛' }
+      ],
+      // Change title based on selected value
+      dynamicTitle: true
+    }
+  }
+}
+
+export const decorators = [withTailwindTheme]
