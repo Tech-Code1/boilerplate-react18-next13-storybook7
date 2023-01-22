@@ -1,4 +1,6 @@
+const path = require('node:path')
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   swcMinify: true,
   reactStrictMode: true,
@@ -10,6 +12,15 @@ const nextConfig = {
   },
   experimental: {
     appDir: true
+  },
+  webpack: config => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+      issuer: /\.tsx$/
+    })
+
+    return config
   }
 }
 
