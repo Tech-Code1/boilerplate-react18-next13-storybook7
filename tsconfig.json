@@ -29,7 +29,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "stories/Introduction.stories.mdx"
+    "stories/Introduction.stories.mdx",
+    "stories/Button.stories.js"
   ],
   "exclude": ["node_modules"]
 }
