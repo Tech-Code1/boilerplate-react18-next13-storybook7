@@ -1,3 +1,5 @@
+'use client'
+
 import ContentLogin from '../components/ContentLogin'
 
 function Register() {
