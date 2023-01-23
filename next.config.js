@@ -1,4 +1,3 @@
-const path = require('node:path')
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
@@ -6,18 +5,13 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   basePath: '',
-  images: {
-    formats: ['image/avif', 'image/webp'],
-    disableStaticImages: true
-  },
   experimental: {
     appDir: true
   },
   webpack: config => {
     config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-      issuer: /\.tsx$/
+      test: /\.(svg, jsx, tsx)$/,
+      use: ['@svgr/webpack']
     })
 
     return config
